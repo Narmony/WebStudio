@@ -1,0 +1,100 @@
+.features {
+  // padding: 94px 0;
+  padding: 60px 0;
+}
+.features-list {
+  // display: flex;
+
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $main-title-color;
+    text-align: center;
+  }
+  &__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: $main-text-color;
+  }
+}
+.features-list__items {
+  display: block;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  &::before {
+    content: '';
+    display: block;
+
+    height: 120px;
+    background-color: $bgc-team-btn;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .features-list__items {
+    width: 450px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .features-list__items {
+    width: 354px;
+    margin-bottom: 30px;
+    &:nth-last-of-type(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .features-list__items {
+    width: 270px;
+  }
+}
+
+// &:not(:last-child) {
+//   margin-right: 30px;
+// }
+
+.attention::before {
+  background-image: url(../img/features/antenna.svg);
+  background-position: center;
+}
+
+.punctuality::before {
+  background-image: url(../img/features/clock.svg);
+  background-position: center;
+}
+
+.planning::before {
+  background-image: url(../img/features/diagram.svg);
+  background-position: center;
+}
+
+.technology::before {
+  background-image: url(../img/features/astronaut.svg);
+  background-position: center;
+}
