@@ -17,74 +17,75 @@
   </head>
 
   <body>
+
     <!--HEADER-->
-    <!-- <header class="header">
-      <div class="container">
-        <nav class="navigation">
-          <a href="./index.html" lang="en" class="logo link"
-            >Web<span class="logo-dark">Studio</span></a
-          >
-          <ul class="navigation__list list">
-            <li class="navigation__item">
-              <a href="./index.html" class="navigation__link link"
-                >Студия</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a
-                href="./portfolio.html"
-                class="navigation__link link active"
-                
-                >Портфолио</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contacts-list list">
-          <li class="contacts-list__item">
-            <a
-              href="mailto:info@devstudio.com"
-              target="_blank"
-              class="contacts-list__link link"
-              ><svg class="contacts-list__icon" width="16" height="12">
-                <use href="./img/sprite.svg#mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts-list__item">
-            <a href="tel:+380961111111" class="contacts-list__link link">
-              <svg class="contacts-list__icon" width="10" height="16">
-                <use href="./img/sprite.svg#phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header> -->
+
+
+      <header>
+        <div class="container header-container">
+          <a href="./index.html" lang="en" class="logo link header-logo">Web<span class="logo-dark">Studio</span></a>
+      
+          <button class="header__menu-button is-open" type="button" aria-expanded="false" aria-controls="menu-container"
+            data-menu-button>
+            <svg class="img header__menu" width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="header__icon-cross" href="./img/sprite.svg#icon-cross"></use>
+              <use class="header__icon-menu" href="./img/sprite.svg#menu"></use>
+            </svg>
+      
+            <div class="header__menu-container">
+              <nav class="navigation">
+      
+                <ul class="navigation__list list">
+                  <li class="navigation__item">
+                    <a href="./index.html" class="navigation__link link">Студия</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="./portfolio.html" class="navigation__link link active">Портфолио</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="" class="navigation__link link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <ul class="contacts-list list">
+                <li class="contacts-list__item">
+                  <a href="mailto:info@devstudio.com" target="_blank" class="contacts-list__link link"><svg
+                      class="contacts-list__icon" width="16" height="12">
+                      <use href="./img/sprite.svg#mail"></use>
+                    </svg>
+                    info@devstudio.com</a>
+                </li>
+                <li class="contacts-list__item">
+                  <a href="tel:+380961111111" class="contacts-list__link link">
+                    <svg class="contacts-list__icon" width="10" height="16">
+                      <use href="./img/sprite.svg#phone"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </header>
+
     <!--PORTFOLIO-->
     <main class="portfolio">
       <section class="gallery container">
         <!--<h1>Портфолио</h1>-->
         <ul class="filter-list list">
           <li class="filter-list__item">
-            <button class="filter-list__button" type="button">Все</button>
+            <button class="button filter-list__button" type="button">Все</button>
           </li>
           <li class="filter-list__item">
-            <button class="filter-list__button" type="button">Веб-сайты</button>
+            <button class="button filter-list__button" type="button">Веб-сайты</button>
           </li>
           <li class="filter-list__item">
-            <button class="filter-list__button" type="button">Приложения</button>
+            <button class="button filter-list__button" type="button">Приложения</button>
           </li>
           <li class="filter-list__item">
-            <button class="filter-list__button" type="button">Дизайн</button>
+            <button class="button filter-list__button" type="button">Дизайн</button>
           </li>
           <li class="filter-list__item">
-            <button class="filter-list__button" type="button">Маркетинг</button>
+            <button class="button filter-list__button" type="button">Маркетинг</button>
           </li>
         </ul>
         <!--GALLERY PORTFOLIO-->
@@ -409,7 +410,7 @@
               </label>
               <form class="footer-subscribe__form">
                 <input type="email" name="user-mail" id="user-mail" class="footer-subscribe__input-email" placeholder="E-mail">
-                <button type="submit" name="subscribe-button" class="footer-subscribe__submit-email">Подписаться<svg
+                <button type="submit" name="subscribe-button" class="button footer-subscribe__submit-email">Подписаться<svg
                     width="24px" height="24px">
                     <use href="./img/sprite.svg#icon-send"></use>
                   </svg></button>
@@ -420,5 +421,6 @@
         
           </div>
         </footer>
+          <script src="./js/menu.js"></script>
   </body>
 </html>
