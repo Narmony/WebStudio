@@ -1,35 +1,32 @@
 .contacts-list {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   margin-left: auto;
 
   &__icon {
     margin-right: 10px;
   }
 
-  &__item:not(:last-child) {
-    margin-right: 50px;
-  }
+  // &__item:not(:last-child) {
+  //   margin-right: 50px;
+  // }
 
   &__link {
     display: block;
-    padding: 32px 0;
-
-    color: $main-title-color;
+    color: $main-text-color;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.143;
+    font-size: 18px;
+    line-height: 1.167;
     letter-spacing: 0.02em;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &__link {
-    display: flex;
-    align-items: center;
-    color: $main-text-color;
+  &__item:not(:last-child) {
+    padding-bottom: 16px;
   }
+
   &__link:hover,
   &__link:focus {
     color: $accent-color;
@@ -46,3 +43,52 @@
     fill: $accent-color;
   }
 }
+
+// .contacts-list {
+//   display: flex;
+//   align-items: center;
+//   margin-left: auto;
+
+//   &__icon {
+//     margin-right: 10px;
+//   }
+
+//   &__item:not(:last-child) {
+//     margin-right: 50px;
+//   }
+
+//   &__link {
+//     display: block;
+//     padding: 32px 0;
+
+//     color: $main-title-color;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.143;
+//     letter-spacing: 0.02em;
+//     transition-property: color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+
+//   &__link {
+//     display: flex;
+//     align-items: center;
+//     color: $main-text-color;
+//   }
+//   &__link:hover,
+//   &__link:focus {
+//     color: $accent-color;
+//   }
+
+//   &__link > svg {
+//     fill: $main-text-color;
+//     transition-property: fill;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+//   &__link:hover svg,
+//   &__link:focus svg {
+//     fill: $accent-color;
+//   }
+// }

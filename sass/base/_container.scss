@@ -3,6 +3,11 @@
 }
 
 .header-container {
+  width: 480px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 60px;
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -25,12 +30,15 @@
     width: 100%;
   }
 
-  .header-container {
-    width: 480px;
-    margin: 0 auto;
-    padding: 0 15px;
-    height: 60px;
-  }
+  // .header-container {
+  //   width: 480px;
+  //   margin: 0 auto;
+  //   padding: 0 15px;
+  //   height: 60px;
+  //   position: relative;
+  //   display: flex;
+  //   align-items: center;
+  // }
 }
 
 @media screen and (min-width: 768px) {
@@ -42,6 +50,9 @@
     .features & {
       width: 768px;
     }
+  }
+  .header-container {
+    width: 768px;
   }
 }
 
@@ -73,6 +84,9 @@
     .clients & {
       padding: 94px 15px;
     }
+  }
+  .header-container {
+    width: 1200px;
   }
 }
 
