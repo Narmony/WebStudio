@@ -188,7 +188,9 @@ img {
 
 @media screen and (max-width: 767px) {
   .header__menu-container {
+    text-align: center;
     position: absolute;
+    z-index: 1;
     top: 100%;
     left: 0;
     width: 100%;
@@ -237,13 +239,25 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .header__menu-button {
+    display: none;
+  }
+  .header-container {
+    height: 80px;
+  }
   .header__menu-container {
     display: flex;
+    align-items: center;
   }
 }
 
-.navigation {
-  margin-bottom: 60px;
+@media screen and (min-width: 1200px) {
+  .header-container {
+    display: flex;
+  }
+  .header__menu-container {
+    display: flex;
+  }
 }
 
 .navigation__link.active {
@@ -267,67 +281,54 @@ img {
   padding-bottom: 8px;
   color: #212121;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.167;
   letter-spacing: 0.02em;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation__item:not(:last-child) {
-  padding-bottom: 40px;
-}
-
-.navigation__item:first-child {
-  padding-bottom: 52px;
-}
-
 .navigation__link:hover, .navigation__link:focus {
   color: #2196f3;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 767px) {
   .navigation {
-    display: flex;
+    margin-bottom: 60px;
+  }
+  .navigation__item:not(:last-child) {
+    padding-bottom: 40px;
+  }
+  .navigation__item:first-child {
+    padding-bottom: 52px;
+  }
+  .navigation__link {
+    font-size: 18px;
+    line-height: 1.167;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
     align-items: center;
+    margin-left: 88px;
+    margin-right: 84px;
+  }
+  .navigation__link {
+    font-size: 14px;
+    line-height: 1.143;
   }
   .navigation__list {
     display: flex;
-    margin-left: 93px;
   }
   .navigation__item:not(:last-child) {
-    margin-right: 50px;
+    padding-right: 50px;
   }
-  .navigation__link.active {
-    position: relative;
-    color: #2196f3;
-  }
-  .navigation__link.active::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 4px;
-    bottom: 0;
-    left: 0;
-    background: #2196f3;
-    border-radius: 2px;
-  }
-  .navigation__link {
-    display: block;
-    padding: 32px 0;
-    color: #212121;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.02em;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .navigation__link:hover, .navigation__link:focus {
-    color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation {
+    margin-left: 93px;
+    margin-right: 305px;
   }
 }
 
@@ -335,24 +336,14 @@ img {
   margin-left: auto;
 }
 
-.contacts-list__icon {
-  margin-right: 10px;
-}
-
 .contacts-list__link {
   display: block;
   color: #757575;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.167;
   letter-spacing: 0.02em;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-list__item:not(:last-child) {
-  padding-bottom: 16px;
 }
 
 .contacts-list__link:hover, .contacts-list__link:focus {
@@ -369,6 +360,51 @@ img {
 .contacts-list__link:hover svg,
 .contacts-list__link:focus svg {
   fill: #2196f3;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-list__link {
+    font-size: 18px;
+    line-height: 1.167;
+  }
+  .contacts-list__icon {
+    margin-right: 10px;
+  }
+  .contacts-list__item:not(:last-child) {
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-list__link {
+    font-size: 12px;
+    line-height: 1.167;
+    display: flex;
+    align-items: center;
+  }
+  .contacts-list__item {
+    padding-bottom: 10px;
+  }
+  .contacts-list__icon {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  .contacts-list__icon {
+    margin-right: 10px;
+  }
+  .contacts-list__item {
+    padding-bottom: 0;
+  }
+  .contacts-list__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .header {
