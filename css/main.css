@@ -52,6 +52,20 @@ img {
   overflow-y: scroll;
 }
 
+@media screen and (max-width: 1200px) {
+  .backdrop {
+    padding-top: 208px;
+    padding-bottom: 208px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .backdrop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -87,6 +101,10 @@ img {
   color: #ffffff;
 }
 
+main {
+  padding: 60px 0;
+}
+
 .container {
   margin: 0 auto;
 }
@@ -96,7 +114,6 @@ img {
   margin: 0 auto;
   padding: 0 15px;
   height: 60px;
-  position: relative;
   display: flex;
   align-items: center;
 }
@@ -119,6 +136,18 @@ img {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .header-container {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  header {
+    position: relative;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .team .container {
     width: 768px;
@@ -127,6 +156,9 @@ img {
     width: 768px;
   }
   .header-container {
+    width: 768px;
+  }
+  .gallery {
     width: 768px;
   }
 }
@@ -356,9 +388,9 @@ img {
 @media screen and (min-width: 480px) {
   .modal {
     position: absolute;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    width: 450px;
+    transform: translateX(-50%) scale(1);
   }
 }
 
@@ -401,6 +433,14 @@ img {
 
 .logo-light {
   color: #ffffff;
+}
+
+header {
+  width: 100%;
+  min-width: 480px;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 100;
 }
 
 @media screen and (max-width: 767px) {
@@ -627,6 +667,7 @@ img {
 .hero {
   height: 400px;
   width: 100%;
+  min-width: 480px;
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
@@ -662,9 +703,6 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .hero {
-    width: 480px;
-  }
   .hero__title {
     width: 360px;
     font-size: 26px;
@@ -674,7 +712,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero-tablet.jpg");
   }
 }
@@ -760,6 +797,9 @@ img {
     display: flex;
     flex-wrap: wrap;
   }
+  .features-list__title {
+    text-align: left;
+  }
   .features-list__items {
     width: 354px;
     margin-bottom: 30px;
@@ -811,6 +851,9 @@ img {
   }
   .about-list__item + .about-list__item {
     margin-left: 30px;
+  }
+  .about-list__pic {
+    width: 370px;
   }
   .about-list__img {
     position: relative;

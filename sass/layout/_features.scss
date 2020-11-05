@@ -55,6 +55,10 @@
   .features-list {
     display: flex;
     flex-wrap: wrap;
+
+    &__title {
+      text-align: left;
+    }
   }
   .features-list__items {
     width: 354px;

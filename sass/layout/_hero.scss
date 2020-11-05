@@ -1,6 +1,7 @@
 .hero {
   height: 400px;
   width: 100%;
+  min-width: 480px;
   margin-left: auto;
   margin-right: auto;
   background-color: $bgc-hero;
@@ -42,7 +43,7 @@
 
 @media screen and (max-width: 767px) {
   .hero {
-    width: 480px;
+    // width: 480px;
 
     &__title {
       width: 360px;
@@ -54,8 +55,8 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
-
+    // width: 100%;
+    // min-width: 480px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img/hero-tablet.jpg');
   }
 }
@@ -92,43 +93,3 @@
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img/hero-desktop@2x.jpg');
   }
 }
-
-// .hero {
-//   height: 600px;
-//   width: 100%;
-//   max-width: 1600px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   background-color: $bgc-hero;
-//   background-image: linear-gradient(
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url("../img/hero.jpg");
-//   background-repeat: no-repeat;
-//   background-size: cover;
-
-//   text-align: center;
-
-//   &__title {
-//     width: 700px;
-//     margin: 0 auto;
-//     font-weight: 900;
-//     font-size: 44px;
-//     line-height: 1.364;
-//     text-align: center;
-//     letter-spacing: 0.06em;
-//     text-transform: uppercase;
-//     color: $main-white-color;
-//   }
-
-//   &__link {
-//     margin-top: 30px;
-//     color: $main-white-color;
-//     font-weight: 700;
-//     font-size: 16px;
-//     line-height: 1.875;
-
-//     letter-spacing: 0.06em;
-//   }
-// }

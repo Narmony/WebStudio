@@ -53,6 +53,20 @@ img {
   overflow-y: scroll;
 }
 
+@media screen and (max-width: 1200px) {
+  .backdrop {
+    padding-top: 208px;
+    padding-bottom: 208px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .backdrop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -88,6 +102,10 @@ img {
   color: #ffffff;
 }
 
+main {
+  padding: 60px 0;
+}
+
 .container {
   margin: 0 auto;
 }
@@ -97,7 +115,6 @@ img {
   margin: 0 auto;
   padding: 0 15px;
   height: 60px;
-  position: relative;
   display: flex;
   align-items: center;
 }
@@ -120,6 +137,18 @@ img {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .header-container {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  header {
+    position: relative;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .team .container {
     width: 768px;
@@ -128,6 +157,9 @@ img {
     width: 768px;
   }
   .header-container {
+    width: 768px;
+  }
+  .gallery {
     width: 768px;
   }
 }
@@ -184,6 +216,14 @@ img {
 
 .logo-light {
   color: #ffffff;
+}
+
+header {
+  width: 100%;
+  min-width: 480px;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 100;
 }
 
 @media screen and (max-width: 767px) {
@@ -407,10 +447,6 @@ img {
   }
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
-}
-
 .filter-list {
   display: flex;
   justify-content: center;
@@ -422,6 +458,10 @@ img {
 
 .gallery {
   padding: 60px 15px;
+}
+
+header {
+  border-bottom: 1px solid #ececec;
 }
 
 .filter-list__button {
